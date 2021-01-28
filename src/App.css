@@ -1,0 +1,38 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "nav content";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+}
+
+#air {
+  width: 300px;
+  height: auto;
+}
+
+.header {
+}
+
+.nav {
+  grid-area: n;
+}
+
+.nav :last-child {
+  color: blue;
+}
+
+.nav :first-child {
+  color: red;
+}
+
+.nav :nth-child(2) {
+  color: green;
+}
+
+.content {
+  grid-area: c;
+}
